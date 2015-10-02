@@ -6,7 +6,7 @@
 #
 #
 
-source "$HOME/.creds" # Load USERNAME and PASSWORD and JENKINS_URL and JIRA_URL vars
+source "$HOME/.updateJIRAbuildFixed" # Load USERNAME and PASSWORD and JENKINS_URL and JIRA_URL vars
 
 #set -x # echo on
 set -e # exit on error
