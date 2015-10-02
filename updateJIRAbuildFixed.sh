@@ -36,7 +36,7 @@ JIRA_TICKET=`echo "${LOGMSG}" | sed -E 's/^.*jira:(PNC-[0-9]*)].*$/\1/'`
 
 
 #
-curl --silent -D- -u ${USERNAME}:${PASSWORD} -X PUT --data "{ \"fields\": { \"customfield_10094\":\"${BUILD}\" } }" -H "Content-Type: application/json" https://jira.mfoundry.com/rest/api/2/issue/${JIRA_TICKET} > /dev/null
+curl --silent -D- -u ${USERNAME}:${PASSWORD} -X PUT --data "{ \"fields\": { \"customfield_10094\":\"${BUILD}\" } }" -H "Content-Type: application/json" ${JIRA_URL}/rest/api/2/issue/${JIRA_TICKET} > /dev/null
 
 
 
